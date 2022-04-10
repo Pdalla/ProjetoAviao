@@ -1,14 +1,25 @@
 package main.classes;
 
+import org.w3c.dom.ls.LSOutput;
+
 import java.io.Serializable;
+import java.time.Clock;
+import java.time.LocalDateTime;
+import java.time.OffsetDateTime;
+import java.util.Date;
 
 public class Voo implements Serializable {
-    private static final long serialVersionUID = 1L;
+
 
     private String origem;
     private String destino;
     private String empresa;
     private String saida;
+    private String chegada;
+    private Double price;
+
+
+
 
     @Override
     public String toString() {
@@ -31,9 +42,7 @@ public class Voo implements Serializable {
         this.price = price;
     }
 
-    public static long getSerialVersionUID() {
-        return serialVersionUID;
-    }
+
 
     public String getOrigem() {
         return origem;
@@ -83,8 +92,7 @@ public class Voo implements Serializable {
         this.price = price;
     }
 
-    private String chegada;
-    private Double price;
+
 
 
 
